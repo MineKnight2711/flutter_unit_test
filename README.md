@@ -13,7 +13,7 @@ To run the unit tests in this project, follow these steps:
 1. Make sure you have Flutter installed on your machine. If not, you can follow the official Flutter installation guide: [https://flutter.dev/docs/get-started/install](https://flutter.dev/docs/get-started/install)
 
 2. Clone this repository to your local machine:
-git clone https://github.com/your-username/flutter_unit_test.git
+git clone (https://github.com/MineKnight2711/flutter_unit_test)
 
 4. Navigate to the project directory:
 cd flutter_unit_test
