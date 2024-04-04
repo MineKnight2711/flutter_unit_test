@@ -3,7 +3,8 @@ import 'package:flutter_unit_test/counter.dart';
 
 void main() {
   // //Pretest
-  // setUp(() => null);
+  late Counter counter;
+  setUp(() => counter = Counter());
   // setUpAll(() => null);
   // //Postest
   // tearDown(() => null);
@@ -15,14 +16,12 @@ void main() {
     test(
         "Truyền vào Counter class khi mà nó khởi tạo thì giá trị biến count phải bằng 0",
         () {
-      final Counter counter = Counter();
       final val = counter.count;
       expect(val, 0);
     });
     test(
         "Truyền vào Counter class khi mà biến count của nó tăng lên thì giả trị của biến count phải bằng 1",
         () {
-      final Counter counter = Counter();
       //Đây là phần thực thi , tăng giá trị của biến count lên 1 bằng cách gọi phương thức incrementCounter() của đối tượng counter.
       counter.incrementCounter();
       final val = counter.count;
@@ -32,7 +31,6 @@ void main() {
     test(
         "Truyền vào Counter class khi mà biến count của nó giảm xuống thì giả trị của biến count phải bằng -1",
         () {
-      final Counter counter = Counter();
       //Đây là phần thực thi , tăng giá trị của biến count lên 1 bằng cách gọi phương thức incrementCounter() của đối tượng counter.
       counter.decrementCounter();
       final val = counter.count;
